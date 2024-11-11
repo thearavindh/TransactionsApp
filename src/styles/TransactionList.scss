@@ -1,0 +1,85 @@
+.transaction-list {
+    background-color: #f5f7fa;
+    padding: 1rem;
+    border-radius: 8px;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+  
+      h2 {
+        margin: 0;
+      }
+  
+      .see-all {
+        text-decoration: none;
+        color: #666;
+      }
+    }
+  
+    .transaction-item {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+  
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+  
+      .avatar {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+      }
+  
+      .transaction-details {
+        flex-grow: 1;
+  
+        h3 {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+  
+        p {
+          margin: 0;
+          color: #888;
+          font-size: 0.9rem;
+        }
+      }
+  
+      .transaction-amount {
+        text-align: right;
+  
+        span {
+          font-weight: bold;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          color: #888;
+        }
+  
+        &.received {
+          span {
+            color: #28a745;
+          }
+        }
+  
+        &.outgoing {
+          span {
+            color: #dc3545;
+          }
+        }
+      }
+    }
+  }
+  
